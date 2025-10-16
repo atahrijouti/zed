@@ -401,7 +401,7 @@ impl RemoteConnection for WslRemoteConnection {
                     anyhow!(
                         "failed to upload directory {} -> {}: {}",
                         src_path.display(),
-                        dest_path.to_string(),
+                        dest_path,
                         e
                     )
                 })?;
